@@ -1,0 +1,71 @@
+<html>
+<head>
+<title>ls</title>
+<link rel="stylesheet" href="divstyle.css">
+</head>
+
+<body>
+<div id="left">
+	<h3>
+		<ul type="disc">
+			<li><a href="linux.html">Home</a></li>
+			<li><a href="pwd.html">pwd</a></li>
+			<li><a href="ls.html">ls</a></li>
+			<li><a href="cd.html">cd</a></li>
+			<li><a href="mkdir.html">mkdir</a></li>
+			<li><a href="rmdir.html">rmdir</a></li>
+			<li><a href="rm.html">rm</a></li>
+			<li><a href="touch.html">touch</a></li>
+			<li><a href="man.html">man & --help</a></li>
+			<li><a href="mv.html">mv</a></li>
+			<li><a href="locate.html">locate</a></li>
+			<li><a href="echo.html">echo</a></li>
+			<li><a href="cat.html">cat</a></li>
+			<li><a href="nano.html">nano,vi,jed</a></li>
+			<li><a href="sudo.html">sudo</a></li>
+			<li><a href="df.html">df</a></li>
+			<li><a href="du.html">du</a></li>
+			<li><a href="tar.html">tar</a></li>
+			<li><a href="zip.html">zip,unzip</a></li>
+			<li><a href="uname.html">uname</a></li>
+			<li><a href="apt.html">apt -get</a></li>
+			<li><a href="chmod.html">chmod</a></li>
+			<li><a href="hostname.html">hostname</a></li>
+			<li><a href="ping.html">ping</a></li>
+		</ul>
+	</h3>
+</div>		
+
+<div id="center">
+	
+		<form method="get" action="man.html">
+    	<button type="submit" class="alignleft" height=10 width=40> < Previous</button>
+		</form>
+
+		<form method="get" action="mv.html">
+    	<button type="submit" class="alignright" height=10 width=40>Next > </button>
+		</form>
+		<br/>
+<h1><i><br/>cp command:</i></h1>
+<p style="font:14pt Bookman Old Style">
+cp is a UNIX command for copying files and directories. The command has three principal modes of operation, expressed by the types of arguments presented to the program for copying a file to another file, one or more files to a directory, or for copying entire directories to another directory.
+cp has three principal modes of operation. These modes are inferred from the type and count of arguments presented to the program upon invocation.
+
+</p><break>
+<ul type ="disc" style="font:14pt Bookman Old Style">
+<li>When the program has two arguments of path names to files, the program copies the contents of the first file to the second file, creating the second file if necessary.<br/>
+Copying a file to another file:<br/>
+cp --sourcefile targetfile
+<li>When the program has one or more arguments of path names of files and following those an argument of a path to a directory, then the program copies each source file to the destination directory, creating any files not already existing.<br/>
+Copying file(s) to a directory<br/>
+cp -- sourcefile... targetdirectory
+<li>When the program's arguments are the path names to two directories, cp copies all files in the source directory to the destination directory, creating any files or directories needed. This mode of operation requires an additional option flag, typically r, to indicate the recursive copying of directories. If the destination directory already exists, the source is copied into the destination, while a new directory is created if the destination does not exist.<br/>
+Copying a directory to a directory (-r or -R must be used)<br/>
+cp -r|-R --sourcedirectory... targetdirectory
+
+
+</ul>
+
+</div>
+</body>
+</html>
